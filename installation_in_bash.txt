@@ -1,0 +1,45 @@
+# install GCC which includes gfortran
+brew install gcc
+
+# check if propoerly installed
+gfortran --version
+
+# GNU Fortran (Homebrew GCC 15.2.0_1) 15.2.0
+
+# create the executables `ls_coefs` and `ls_field`
+gfortran LScoefs.f -o ls_coefs
+gfortran LSfield.f -o ls_field
+
+# obtain the coefficients using ls_coefs
+""" for that, first create an input text file with the model no (1 for LSMOD1 or 2 for LSMOD2), an output file name, Latitude (deg) and Longitude(deg) in the format
+1 or 2
+output file name
+Latitude
+Longitude
+
+For e.g.: vi trial_input.txt
+2
+trial_output
+62.5
+22.5
+"""
+
+# run the ./ls_field with the unput parameters from the trial_input.txt
+./ls_field < trial_input.txt
+
+# this will generate a file named `trial_output` with the values of Age, D, I, and F for all teh years from 49.95 ka BP to 29.95 ka BP
+"""
+here is a snapshot
+
+ Age(ka BP)   D(deg.)   I(deg.)  F(microT)
+      49.95     -5.92     78.38      74.6
+      49.93     -4.13     78.20      74.5
+      49.91     -2.37     78.01      74.5
+      49.89     -0.62     77.81      74.5
+      49.87      0.99     77.59      74.4
+      49.85      2.28     77.36      74.4
+      49.83      3.11     77.10      74.3
+      49.81      3.59     76.82      74.3
+
+
+"""
