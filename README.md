@@ -65,7 +65,6 @@ The angle formed between the magnetic field vector and the horizontal plane alon
 
 $$
 \tan \delta = \frac{B_v}{B_h}
-\tag{1}
 $$
 
 Where:
@@ -76,6 +75,7 @@ Where:
 ### Apparent Dip $(\delta')$
 
 The apparent angle of inclination formed by a non-magnetic meridian plane at an angle with the magnetic meridian plane.
+
 $$
 \delta' = \tan^{-1}(\frac{\tan\delta}{\cos\alpha})
 $$
@@ -120,14 +120,7 @@ During an equinox,
 The magnetic field experienced at position $\mathbf{r}$ due to dipole moment $\mathbf{m}$ is:
 
 $$
-\mathbf{B}(\mathbf{r}) =
-\frac{\mu_0}{4\pi r^3}
-\left[
-3(\mathbf{m} \cdot \hat{r})\hat{r}
--
-\mathbf{m}
-\right]
-\tag{2}
+\mathbf{B}(\mathbf{r}) =\frac{\mu_0}{4\pi r^3}\left[3(\mathbf{m} \cdot \hat{r})\hat{r}-\mathbf{m}\right]
 $$
 
 ### In Spherical Coordinates (Aligned Dipole)
@@ -136,14 +129,12 @@ Radial component:
 
 $$
 B_r = -\frac{2M \cos\theta}{r^3}
-\tag{3}
 $$
 
 Latitudinal component:
 
 $$
 B_\theta = -\frac{M \sin\theta}{r^3}
-\tag{4}
 $$
 
 Where:
@@ -162,7 +153,6 @@ An L-shell labels a dipole magnetic field line. It gives the radial distance (in
 
 $$
 L = \frac{r}{R_E}
-\tag{5}
 $$
 
 Where:
@@ -174,7 +164,6 @@ In a centered dipole magnetic field model, the field line equation is:
 
 $$
 r = L R_E \cos^2 \lambda
-\tag{6}
 $$
 
 Where:
