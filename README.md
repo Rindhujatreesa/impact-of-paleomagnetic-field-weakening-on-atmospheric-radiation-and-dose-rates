@@ -227,11 +227,7 @@ Units: Gigavolts (GV)
 ### Störmer Cut-off Rigidity [[5]](#5-kress-b-t-m-khudson-r-sselesnick-c-jmertens-and-mengel-2015-jgr-space-physics-120-56945702-httpsdoiorg1010022014ja020899)
 
 $$
-R_c =
-\frac{M}{r^2}
-\frac{\cos^4 \lambda}
-{\left(1 + \sqrt{1 - \cos^3\lambda \sin Z \sin A}\right)^2}
-\tag{7}
+R_c =\frac{M}{r^2}\frac{\cos^4 \lambda}{\left(1 + \sqrt{1 - \cos^3\lambda \sin Z \sin A}\right)^2}
 $$
 
 Where,
