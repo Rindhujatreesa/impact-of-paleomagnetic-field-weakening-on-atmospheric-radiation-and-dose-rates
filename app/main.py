@@ -9,7 +9,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 st.set_page_config(layout="wide")
 
-st.title("Geomagnetic Cutoff Dashboard")
+st.title("Geomagnetic Dashboard")
 
 page = st.sidebar.radio(
     "Select Module",
@@ -22,7 +22,7 @@ if page == "Global Map with Rigidity Cut off":
 elif page == "Dipole Field Intensity Map":
     from dipole_field import intensity
     from src.lscoefs import get_coeffs_at_age
-    st.title("🌍 Dipole Field Intensity Map")
+    st.title("Dipole Field Intensity Map")
 
     # @st.cache_data
     # def cached_get_coeffs(age):

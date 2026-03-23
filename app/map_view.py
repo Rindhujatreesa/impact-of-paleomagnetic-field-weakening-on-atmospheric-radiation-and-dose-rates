@@ -31,8 +31,8 @@ def global_view():
 
     filtered_df = df[df["Altitude"] == selected_altitude]
 
-    st.title(f"Global Cutoff Rigidity (Rc)")
-    st.header(f"1. At different Altitudes (30 - 90 km)")
+    st.title(f"🌍 Global Cutoff Rigidity (Rc)")
+    st.header(f"1. At different Altitudes (30 - 10000 km)")
     st.markdown(f"Date: {df["Date"][0]}")
     st.markdown(f"**Altitude: {selected_altitude} km**")
 
@@ -44,8 +44,8 @@ def global_view():
         lon = "Longitude",
         color = "Rc",
         size = "Rc",
-        color_continuous_scale = "Viridis",
-        projection = "natural earth"
+        color_continuous_scale = "viridis_r",
+        projection = "natural earth2"
     )
 
     fig.update_layout(
