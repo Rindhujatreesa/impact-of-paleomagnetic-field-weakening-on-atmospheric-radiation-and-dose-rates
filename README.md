@@ -13,6 +13,25 @@ This project computes the global geomagnetic rigidity cutoffs using a real paleo
 5. Visualize atmospheric ion production and dose rate changes with magnetic field weakening
 
 
+### Run this command in terminal before the notebook executions
+
+```bash
+# change to the working directory of the project
+cd path/to/the project
+
+# create a virtual python enviroment
+python3 -m venv .venv
+
+# Activate the environment
+source venv/bin/activate # for MacOS/Bash/zsh/Linux
+
+myenv\Scripts\activate.bat # for Windows Command Prompt
+
+.\myenv\Scripts\Activate.ps1 # for Windows Powershell
+
+# install the requirements
+pip3 install -r requirements.txt
+```
 # Literature Review
 
 According to [[1]](#1-mukhopadhyay-a-panovska-s-garvey-r-liemohn-m-w-ganjushkina-n-brenner-a-usoskin-i-balikhin-m--welling-d-t-2025-science-advances-1116-eadq7275--httpsdoiorg101126sciadvadq7275), during the Laschamps geomagnetic excursion period (about 41 ka ago), the Earth’s magnetic field reduced to ~10% of the modern values, and the magnetic poles underwent dramatic tilts away from the geographic poles. The Earth’s dipole behaviour was lost as it exhibited multipolarity, similar to the outer planets. The weakened dipole strengths and tilts in the magnetic poles resulted in changes in auroral regions and open magnetic lines, extending to equatorial regions (lower latitudes).

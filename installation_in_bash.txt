@@ -1,7 +1,7 @@
 # install GCC which includes gfortran
 brew install gcc
 
-# check if propoerly installed
+# check if properly installed
 gfortran --version
 
 # GNU Fortran (Homebrew GCC 15.2.0_1) 15.2.0

@@ -1,0 +1,10 @@
+pandas
+numpy
+plotly
+matplotlib
+ipywidgets
+scipy
+nbformat
+OTSO
+streamlit
+kaleido
