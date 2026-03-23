@@ -36,7 +36,8 @@ elif page == "Dipole Field Intensity Map":
 
 # elif page == "Penumbra":
 #     from app.penumbra import run
-# elif page == "Trajectory Viewer":
-#     from app.trajectory import run
+elif page == "Trajectory Viewer":
+    from trajectory_viewer import trajectory
+    trajectory()
 
 # run()
