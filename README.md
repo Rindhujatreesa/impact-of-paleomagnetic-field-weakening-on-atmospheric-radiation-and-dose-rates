@@ -1,4 +1,4 @@
-# Impact of Paleomagnetic field weakening on atmospheric radiation and dose-rates
+# Geomagnetic Field Modeling and Atmospheric CR Induced Ionization Analysis through Ages
 This project computes the global geomagnetic rigidity cutoffs using a real paleomagnetic field model and computes atmospheric ionization and effective dose rates to compare present-day vs excursion scenarios, over latitude and altitude
 
 ## Objective
