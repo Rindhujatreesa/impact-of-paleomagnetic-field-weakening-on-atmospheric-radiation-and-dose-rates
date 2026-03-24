@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-
+import os
 
 
 
@@ -9,10 +9,14 @@ def global_view():
     """
     Loads the data stored at data/rigidity_cutoff_values.csv for viz
     """
-    # Should be replaced with the actual path
+
     # here, the values are considered only for the date (28/10/2008)
     # see, Section 2 in rigidity_cutoff.ipynb for the steps
-    df = pd.read_csv("/Users/rindhujajohnson/Documents/GitHub/paleomagnetic/data/rigidity_cutoff_values.csv")
+    
+    BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # go to repo root
+    file_path = os.path.join(BASE_DIR, "data", "rigidity_cutoff_values.csv")
+
+    df = pd.read_csv(file_path)
 
 
     # Definig the Slider for Altitude Control

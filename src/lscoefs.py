@@ -16,18 +16,17 @@ def get_coeffs_at_age(age, model_number = 2):
     LS_DIR = "data/LSMOD2/LSMOD2"
     
     # Ensure relative paths work well
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    LS_DIR = os.path.join(BASE_DIR, "..", "data", "LSMOD2", "LSMOD2")
-    LS_DIR = os.path.abspath(LS_DIR)
+    # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    # LS_DIR = os.path.join(BASE_DIR, "..", "data", "LSMOD2", "LSMOD2")
+    # LS_DIR = os.path.abspath(LS_DIR)
 
     # Full path to executable
-    executable = os.path.join(LS_DIR, "./ls_coefs")
+    executable = os.path.join(LS_DIR, "ls_coefs")
     output_file = "coefs.dat" # This file has four columns - SH_degree, SH_order, g(nT), and h(nT0)
     input_content = f"{age}\n{model_number}\n"
 
-
-    with open("temp_input.txt", "w") as file:
-        file.write(input_content)
+    if not os.path.exists(executable):
+    os.system("gfortran data/LSMOD2/LSMOD2/ls_coefs.f -o " + executable)
 
     result = subprocess.run(
         [executable],

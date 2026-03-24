@@ -37,6 +37,5 @@ elif page == "Dipole Field Intensity Map":
 elif page == "Cosmic Ray Ionization":
     from crii_model import crii_model
 
-    st.set_page_config(layout="wide")
     crii_model()
     
