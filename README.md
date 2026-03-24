@@ -43,7 +43,9 @@ cd app
 streamlit run main.py
 ```
 
-> #### Use the `installation_in_bash.txt` for complete setup
+> ### Streamlit Dashboard: [Dashboard](STREAMLIT.md)
+
+> ### Use the [Setup for Fortran Wrap](installation_in_bash.txt) for complete setup
 
 # Literature Review
 
@@ -110,8 +112,8 @@ $$
 \delta' = \tan^{-1}(\frac{\tan\delta}{\cos\alpha})
 $$
 
-<img src="images/dip-and-declination.png" alt="Description of image" width="45%">
-<img src="images/earth_magnetic_field.jpeg" alt="Description of image" width="45%">
+<img src="images/dip-and-declination.png" alt="Dip and Declination" width="45%">
+<img src="images/earth_magnetic_field.jpeg" alt="Earth's MF" width="45%">
 
 
 ### Zenith and Azimuth Angles [[8]](#8-solar-azimuth-angle-httpsenwikipediaorgwikisolar_azimuth_angle)

@@ -13,7 +13,7 @@ st.set_page_config(layout="wide")
 st.title("Geomagnetic Dashboard")
 
 page = st.sidebar.radio(
-    "Select Module",
+    "Select Vizualization",
     ["Global Map with Rigidity Cut off", "Dipole Field Intensity Map", "Cosmic Ray Ionization"]
 )
 # 1. Global Map with Rigidity Cut off
