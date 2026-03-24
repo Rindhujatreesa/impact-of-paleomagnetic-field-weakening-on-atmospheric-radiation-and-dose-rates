@@ -26,7 +26,7 @@ def get_coeffs_at_age(age, model_number = 2):
     input_content = f"{age}\n{model_number}\n"
 
     if not os.path.exists(executable):
-    os.system("gfortran data/LSMOD2/LSMOD2/ls_coefs.f -o " + executable)
+        os.system("gfortran data/LSMOD2/LSMOD2/ls_coefs.f -o " + executable)
 
     result = subprocess.run(
         [executable],
