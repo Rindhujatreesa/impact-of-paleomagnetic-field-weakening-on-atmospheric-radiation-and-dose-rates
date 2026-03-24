@@ -53,7 +53,7 @@ streamlit run main.py
 
     <img src="images/ratio_CRII.png" alt="Comparative CRII" width=65%>
 
-*Citations*
+### *Citations*
 
 #### [1] I.G. Usoskin, G.A. Kovaltsov and A.L. Mishev. J. Space Weather Space Clim., 14 (2024) 20 DOI: [https://doi.org/10.1051/swsc/2024020](https://doi.org/10.1051/swsc/2024020)
 

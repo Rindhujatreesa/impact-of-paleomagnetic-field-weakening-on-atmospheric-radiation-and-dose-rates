@@ -43,7 +43,7 @@ cd app
 streamlit run main.py
 ```
 
-> ### Streamlit Dashboard: [Dashboard](STREAMLIT.md)
+> ### Streamlit Dashboard: [Dashboard](Dashboard.md)
 
 > ### Use the [Setup for Fortran Wrap](installation_in_bash.txt) for complete setup
 
