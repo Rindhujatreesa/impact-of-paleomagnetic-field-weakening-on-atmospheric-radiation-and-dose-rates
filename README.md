@@ -32,6 +32,9 @@ myenv\Scripts\activate.bat # for Windows Command Prompt
 # install the requirements
 pip3 install -r requirements.txt
 ```
+
+> #### Use the `installation_in_bash.txt` for complete setup
+
 # Literature Review
 
 According to [[1]](#1-mukhopadhyay-a-panovska-s-garvey-r-liemohn-m-w-ganjushkina-n-brenner-a-usoskin-i-balikhin-m--welling-d-t-2025-science-advances-1116-eadq7275--httpsdoiorg101126sciadvadq7275), during the Laschamps geomagnetic excursion period (about 41 ka ago), the Earth’s magnetic field reduced to ~10% of the modern values, and the magnetic poles underwent dramatic tilts away from the geographic poles. The Earth’s dipole behaviour was lost as it exhibited multipolarity, similar to the outer planets. The weakened dipole strengths and tilts in the magnetic poles resulted in changes in auroral regions and open magnetic lines, extending to equatorial regions (lower latitudes).
@@ -54,13 +57,11 @@ The paper reproduced geomagnetic behavior in:
 - Intermittent regional excursions
 - Eventual return toward modern intensity
 
----
 
 ## Event Mapping During the Laschamps Excursion
 
 ![](images/event-mapping.png)
 
----
 
 ##### What happens if such an excursion happens in the modern world where daily life depends enormously on space climate? 
 
@@ -303,7 +304,6 @@ Used for:
 - Rigidity cutoff calculations  
 - Geomagnetic shielding studies  
 
----
 
 ## Atmospheric Radiation Dose Rate
 
@@ -321,7 +321,6 @@ Depends on:
 - Geomagnetic conditions  
 - Solar activity  
 
----
 
 # Project Objectives
 

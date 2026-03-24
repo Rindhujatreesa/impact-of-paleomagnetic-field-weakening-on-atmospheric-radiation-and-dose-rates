@@ -31,8 +31,8 @@ def global_view():
 
     filtered_df = df[df["Altitude"] == selected_altitude]
 
-    st.title(f"🌍 Global Cutoff Rigidity (Rc)")
-    st.header(f"1. At different Altitudes (30 - 10000 km)")
+    st.title(f"Global Cutoff Rigidity (Rc)")
+    st.subheader(f"At different Altitudes (30 - 10000 km)")
     st.markdown(f"Date: {df["Date"][0]}")
     st.markdown(f"**Altitude: {selected_altitude} km**")
 
@@ -50,7 +50,13 @@ def global_view():
 
     fig.update_layout(
         coloraxis_colorbar = dict(title = "Rc [GV]"),
-        margin = dict(l=0, r=0, t=40, b = 0)
+        margin = dict(l=0, r=0, t=40, b = 0),
+        geo = dict(
+            showland = True,
+            landcolor = "burlywood",
+            bgcolor = "azure",
+            showcountries = True
+        )
     )
 
     st.plotly_chart(fig, width="stretch")
