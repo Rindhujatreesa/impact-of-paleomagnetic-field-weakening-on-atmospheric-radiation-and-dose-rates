@@ -13,7 +13,7 @@ def get_coeffs_at_age(age, model_number = 2):
     age
     model number (this is set to 2 by default (LSMOD.2 model))
     """
-    LS_DIR = "data/LSMOD2/LSMOD2"
+    # LS_DIR = "data/LSMOD2/LSMOD2"
     
     # Ensure relative paths work well
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))

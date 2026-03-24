@@ -6,9 +6,10 @@ import streamlit as st
 import plotly.express as px
 
 
-DATA_DIR = "/Users/rindhujajohnson/Documents/GitHub/paleomagnetic/data"
-CRII_DIR = os.path.join(DATA_DIR, "CRII_tables")
-RC_FILE = os.path.join(DATA_DIR, "rigidity_cutoff_values.csv")
+# DATA_DIR = "/Users/rindhujajohnson/Documents/GitHub/paleomagnetic/data"
+DATA_DIR = os.path.dirname(os.path.dirname(__file__))
+CRII_DIR = os.path.join(DATA_DIR, "data", "CRII_tables")
+RC_FILE = os.path.join(DATA_DIR, "data", "rigidity_cutoff_values.csv")
 
 
 # LOAD Rc DATA for the selected altitude across the (lat, lon) points to plot on the graph
@@ -225,7 +226,7 @@ def crii_model():
         )
     )
 
-    st.plotly_chart(fig, width=5000)
+    st.plotly_chart(fig, width="stretch")
 
     fig = px.imshow(
     plot_data,
@@ -243,7 +244,7 @@ def crii_model():
         yaxis_title="Latitude"
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
     with st.expander("Show Data"):
         st.dataframe(plot_data)
