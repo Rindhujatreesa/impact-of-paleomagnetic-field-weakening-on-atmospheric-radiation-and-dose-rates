@@ -13,7 +13,7 @@ This project computes the global geomagnetic rigidity cutoffs using a real paleo
 5. Visualize atmospheric ion production and dose rate changes with magnetic field weakening
 
 
-### Run this command in terminal before the notebook executions
+## Run this command in terminal before the notebook executions
 
 ```bash
 # change to the working directory of the project
@@ -31,6 +31,16 @@ myenv\Scripts\activate.bat # for Windows Command Prompt
 
 # install the requirements
 pip3 install -r requirements.txt
+```
+
+## Run the Streamlit Geomagnetic Dashboard
+
+(After installing the requirements)
+
+```bash
+cd app
+
+streamlit run main.py
 ```
 
 > #### Use the `installation_in_bash.txt` for complete setup
