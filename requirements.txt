@@ -8,3 +8,4 @@ nbformat
 OTSO
 streamlit
 kaleido
+altair
