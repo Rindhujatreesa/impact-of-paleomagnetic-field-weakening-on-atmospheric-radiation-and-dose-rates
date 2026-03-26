@@ -1,3 +1,5 @@
+> ### Take a Quick Look at Streamlit Dashboard: [Dashboard](Dashboard.md)
+> 
 # Geomagnetic Field Modeling and Atmospheric CR Induced Ionization Analysis through Ages
 This project computes the global geomagnetic rigidity cutoffs using a real paleomagnetic field model and computes atmospheric ionization and effective dose rates to compare present-day vs excursion scenarios, over latitude and altitude
 
@@ -42,8 +44,6 @@ cd app
 
 streamlit run main.py
 ```
-
-> ### Streamlit Dashboard: [Dashboard](Dashboard.md)
 
 > ### Use the [Setup for Fortran Wrap](installation_in_bash.txt) for complete setup
 
